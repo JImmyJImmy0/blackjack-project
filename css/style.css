@@ -1,0 +1,66 @@
+html {
+    box-sizing: border-box
+  }
+  
+  /* The Universal Selector */
+  *, /* All elements*/
+  *::before, /* All ::before pseudo-elements */
+  *::after { /* All ::after pseudo-elements */
+    /* height & width will now include border & padding by default
+       but can be over-ridden as needed */
+    box-sizing: inherit;
+  }
+  
+  /* resets font size to be 62.5% of the user preference - 
+     in most browser configurations this will be 10px */
+  :root {
+    font-size: 62.5%
+  }
+
+  body {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+  }
+
+  #main-title {
+      font-size: 48px;
+  }
+
+  #game-goal {
+      font-size: 28px;
+  }
+
+  #dealer-total {
+      background-color: lightblue;
+      position: fixed;
+      top: 30%;
+      width: 150px;
+      height: 200px;
+  }
+
+  #message {
+      position: fixed;
+      top: 55%;
+  }
+
+  #player-total {
+      background-color: lightblue;
+      position: fixed;
+      top: 60%;
+      width: 150px;
+      height: 200px;
+  }
+
+  .btn-group {
+      position: fixed;
+      top: 85%
+  }
+
+  #play-button {
+      position: fixed;
+      top: 20%;
+  }
+
+  
