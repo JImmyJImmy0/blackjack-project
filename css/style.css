@@ -74,3 +74,15 @@ html {
       left: 100px;
       top: 775px;
   }
+
+  #bet-header {
+      position: absolute;
+      right: 100px;
+      top: 750px;
+  }
+
+  #bet {
+      position: absolute;
+      right: 100px;
+      top: 775px;
+  }
