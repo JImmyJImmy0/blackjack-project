@@ -14,12 +14,13 @@ let dealerCards = [];
 let playerWin = false;
 let gameStarted = false;
 let gameOver = false;
+let startingCash = 100;
 /*--------------- Cached Element References ---------------*/
 const hitBtn = document.querySelector('#hit-btn');
 const standBtn = document.querySelector('#stand-btn');
 const playBtn = document.querySelector('#play-button');
 const cashTotal = document.querySelector('#cash-total');
-const message = document.querySelector('#message');
+const messageEl = document.querySelector('#message');
 const betInput = document.querySelector('#bet');
 
 /*-------------------- Event Listeners --------------------*/
@@ -98,3 +99,22 @@ function updateScores() {
     playerScore = getScore(playerCards);
 }
 
+function gameWinner() {
+    updateScores();
+    if (playerScore <= 21 && playerScore === dealerScore) {
+        // update game message
+        messageEl.innerText = `Push! You and the Dealer both had ${playerScore}.`;
+    } else if ( (playerScore <= 21 && dealerScore <= 21) && playerScore > dealerScore) {
+        // update win game message
+        messageEl.innerText = `You win! Keep it goin!`;
+    } else if ( (playerScore <= 21 && dealerScore <= 21) && playerScore < dealerScore) {
+        // update lose game message
+        messageEl.innerText = `The dealer wins! Better luck next time!`;
+    } else if (playerScore > 21) {
+        // update bust game message
+        messageEl.innerText = `Bust! Better luck next time!`
+    } else if (dealerScore > 21) {
+        // update bust dealer game message
+        messageEl.innerText = `Dealer bust! You win!`
+    }
+}
