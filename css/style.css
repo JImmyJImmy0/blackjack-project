@@ -63,4 +63,14 @@ html {
       top: 20%;
   }
 
-  
+  #cash-header {
+      position: absolute;
+      left: 100px;
+      top: 750px;
+  }
+
+  #cash-total {
+      position: absolute;
+      left: 100px;
+      top: 775px;
+  }
