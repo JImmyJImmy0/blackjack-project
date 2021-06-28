@@ -76,3 +76,19 @@ function getCardValue(card) {
 function getNextCard() {
     return deck.shift;
 }
+
+function getScore(cardArr) {
+    let score = 0;
+    let hasAce = false;
+    for (let i = 0; i < cardArr.length; i++) {
+        let card = cardArr[i];
+        score += getCardValue(card);
+        if (card.value === 'A') {
+            hasAce === true;
+        }
+    }
+    if (hasAce && score + 10 <= 21) {
+        return score + 10;
+    }
+    return score;
+}
