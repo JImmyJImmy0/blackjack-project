@@ -6,7 +6,12 @@
 let suits = ['Hearts', 'Diamonds', 'Clubs', 'Spades'];
 let values = ['2', '3', '4', '5', '6', '7', '8', '9', '10', 'J', 'Q', 'K', 'A'];
 
-
+let dealerScore = 0;
+let playerScore = 0;
+let deck = [];
+let playerWin = false;
+let gameStarted = false;
+let gameOver = false;
 /*--------------- Cached Element References ---------------*/
 const hitBtn = document.querySelector('#hit-btn');
 const standBtn = document.querySelector('#stand-btn');
