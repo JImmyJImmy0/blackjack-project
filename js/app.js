@@ -70,3 +70,7 @@ function getCardValue(card) {
             return 10;
     }
 }
+
+function getNextCard() {
+    return deck.shift;
+}
