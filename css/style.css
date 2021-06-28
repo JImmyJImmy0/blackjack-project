@@ -67,18 +67,21 @@ html {
       position: absolute;
       left: 100px;
       top: 750px;
+      font-size: 20px;
   }
 
   #cash-total {
       position: absolute;
       left: 100px;
       top: 775px;
+      font-size: 18px;
   }
 
   #bet-header {
       position: absolute;
       right: 100px;
       top: 750px;
+      font-size: 20px;
   }
 
   #bet {
