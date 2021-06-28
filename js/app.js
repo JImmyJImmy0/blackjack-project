@@ -41,3 +41,7 @@ function generateDeck() {
     return deck;
 }
 
+function shuffleDeck(deck) {
+    let randomIndex = Math.floor(Math.random() * deck.length);
+    return randomIndex;
+}
