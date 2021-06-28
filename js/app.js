@@ -27,15 +27,17 @@ playBtn.addEventListener('click', log3);
 
 
 /*----------------------- Functions -----------------------*/
-function log() {
-    console.log('hit working')
-}
-
-function log2() {
-    console.log('stand working')
-}
-
-function log3() {
-    console.log('play working')
+function generateDeck() {
+    let deck = [];
+    for (let suitIndex = 0; suitIndex < suits.length; suitIndex++) {
+        for (let valueIndex = 0; valueIndex < values.length; valueIndex++) {
+            let card = {
+                suit: suits[suitIndex],
+                value: value[valueIndex]
+            };
+            deck.push(card);
+        }
+    }
+    return deck;
 }
 
