@@ -92,3 +92,9 @@ function getScore(cardArr) {
     }
     return score;
 }
+
+function updateScores() {
+    dealerScore = getScore(dealerCards);
+    playerScore = getScore(playerCards);
+}
+
