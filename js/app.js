@@ -49,9 +49,6 @@ function play() {
 
 
 
-
-
-
 function generateDeck() {
     let deck = [];
     for (let suitIndex = 0; suitIndex < suits.length; suitIndex++) {
@@ -68,9 +65,20 @@ function generateDeck() {
 
 // https://devdojo.com/devdojo/create-a-deck-of-cards-in-javascript
 function shuffleDeck(o) {
-	for(var j, x, i = o.length; i; j = parseInt(Math.random() * i), x = o[--i], o[i] = o[j], o[j] = x);
-	return o;
-};
+	// iterate over the entire input array "o"
+    for(let i = o.length; i; i--) {
+        // get the "current" item and save it in variable "x"
+        let x = o[i];
+        // generate a random number within the bounds of the array
+        let j = parseInt(Math.random() * (i + 1));
+        // The next two lines essentially swap item[i] and item[j]
+        // set the "current" item to a randomly picked item
+        o[i] = o[j];
+        // put the "current" item in the random position
+        o[j] = x;
+        }
+        return o;
+    };
 
 function getCardValue(card) {
     switch (card.value) {
