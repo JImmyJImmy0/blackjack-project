@@ -15,6 +15,7 @@ let playerWin = false;
 let gameStarted = false;
 let gameOver = false;
 let startingCash = 100;
+
 /*--------------- Cached Element References ---------------*/
 const hitBtn = document.querySelector('#hit-btn');
 const standBtn = document.querySelector('#stand-btn');
@@ -22,28 +23,48 @@ const playBtn = document.querySelector('#play-button');
 const cashTotal = document.querySelector('#cash-total');
 const messageEl = document.querySelector('#message');
 const betInput = document.querySelector('#bet');
+const dealerDiv = document.querySelector('#dealer-total');
+const playerDiv = document.querySelector('#player-total');
 
 /*-------------------- Event Listeners --------------------*/
-hitBtn.addEventListener('click', log);
-standBtn.addEventListener('click', log2);
-playBtn.addEventListener('click', log3);
+// hitBtn.addEventListener('click', log);
+// standBtn.addEventListener('click', log2);
+playBtn.addEventListener('click', play);
 
 
 /*----------------------- Functions -----------------------*/
+function play() {
+    gameStarted = true;
+
+    deck = generateDeck;
+    shuffleDeck(deck);
+    dealerCards = [getNextCard()];
+    playerCards = [getNextCard(), getNextCard()];
+
+    dealerDiv.innerHTML = `dealer has ${dealerCards}`;
+    playerDiv.innerText = `player has ${playerCards}`;
+}
+
+
+
+
+
+
+
+
 function generateDeck() {
     let deck = [];
     for (let suitIndex = 0; suitIndex < suits.length; suitIndex++) {
         for (let valueIndex = 0; valueIndex < values.length; valueIndex++) {
             let card = {
                 suit: suits[suitIndex],
-                value: value[valueIndex]
+                value: values[valueIndex]
             };
             deck.push(card);
         }
     }
     return deck;
 }
-
 function shuffleDeck(deck) {
     let randomIndex = Math.floor(Math.random() * deck.length);
     return randomIndex;
