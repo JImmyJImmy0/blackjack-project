@@ -65,10 +65,12 @@ function generateDeck() {
     }
     return deck;
 }
-function shuffleDeck(deck) {
-    let randomIndex = Math.floor(Math.random() * deck.length);
-    return randomIndex;
-}
+
+// https://devdojo.com/devdojo/create-a-deck-of-cards-in-javascript
+function shuffle(o) {
+	for(var j, x, i = o.length; i; j = parseInt(Math.random() * i), x = o[--i], o[i] = o[j], o[j] = x);
+	return o;
+};
 
 function getCardValue(card) {
     switch (card.value) {
