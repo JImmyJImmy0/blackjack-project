@@ -44,7 +44,7 @@ html {
 
   #message {
       position: fixed;
-      top: 55%;
+      top: 20%;
   }
 
   #player-total {
@@ -92,4 +92,16 @@ html {
       position: absolute;
       right: 100px;
       top: 775px;
+  }
+
+  #player-title {
+      position: fixed;
+      top: 56%;
+      font-size: 24px;
+  }
+
+  #dealer-title {
+      position: fixed;
+      top: 26%;
+      font-size: 24px;
   }

@@ -52,8 +52,8 @@ function play() {
     let playerCardStr1 = playerCards[0].value + ' of ' + playerCards[0].suit;
     let playerCardStr2 = playerCards[1].value + ' of ' + playerCards[1].suit;
 
-    dealerCardsEl.innerText = "Dealer has: \n" + dealerCardStr1 + "\n" + dealerCardStr2;
-    playerCardsEl.innerText = "Player has: \n" + playerCardStr1 + "\n" + playerCardStr2;
+    dealerCardsEl.innerText = dealerCardStr1 + "\n" + dealerCardStr2;
+    playerCardsEl.innerText = playerCardStr1 + "\n" + playerCardStr2;
 
     dealerScore = getScore(dealerCards);
     playerScore = getScore(playerCards);
@@ -79,7 +79,7 @@ function handleHit() {
     //Kept get error when trying to display the 4th card;
     // let playerCardStr4 = playerCards[3].value + ' of ' + playerCards[3].suit;
 
-    playerCardsEl.innerText = "Player has: \n" + playerCardStr1 + "\n" + playerCardStr2 + "\n" + playerCardStr3;
+    playerCardsEl.innerText = playerCardStr1 + "\n" + playerCardStr2 + "\n" + playerCardStr3;
     
     updateScores();
     playerScoreEl.innerText = playerScore;
@@ -96,7 +96,7 @@ function handleStand() {
         let dealerCardStr2 = dealerCards[1].value + ' of ' + dealerCards[1].suit;
         let dealerCardStr3 = dealerCards[2].value + ' of ' + dealerCards[2].suit;
 
-        dealerCardsEl.innerText = "Dealer has: \n" + dealerCardStr1 + "\n" + dealerCardStr2 + "\n" + dealerCardStr3;
+        dealerCardsEl.innerText = dealerCardStr1 + "\n" + dealerCardStr2 + "\n" + dealerCardStr3;
 
         updateScores();
         dealerScoreEl.innerText = dealerScore;
