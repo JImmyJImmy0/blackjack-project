@@ -65,7 +65,9 @@ html {
 
   #play-button {
       position: fixed;
-      top: 22%;
+      top: 21%;
+      width: 60px;
+      height: 40px;
   }
 
   #cash-header {
