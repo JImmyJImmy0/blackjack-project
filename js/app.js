@@ -4,7 +4,7 @@
 
 /*----------------------- Variables -----------------------*/
 let suits = ['Hearts', 'Diamonds', 'Clubs', 'Spades'];
-let values = ['2', '3', '4', '5', '6', '7', '8', '9', '10', 'J', 'Q', 'K', 'A'];
+let values = ['2', '3', '4', '5', '6', '7', '8', '9', '10', 'Jack', 'Queen', 'King', 'Ace'];
 
 let dealerScore = 0;
 let playerScore = 0;
@@ -39,11 +39,24 @@ function play() {
     deck = generateDeck();
     shuffleDeck(deck);
 
-    dealerCards = [JSON.stringify(deck.shift()), JSON.stringify(deck.shift())];
-    playerCards = [JSON.stringify(deck.shift()), JSON.stringify(deck.shift())];
+    dealerCards = [deck.shift(), deck.shift()];
+    playerCards = [deck.shift(), deck.shift()];
 
-    dealerDiv.innerHTML = `dealer has ${dealerCards}`;
-    playerDiv.innerText = `player has ${playerCards}`;
+    let dealerCardStr1 = dealerCards[0].value + ' of ' + dealerCards[0].suit;
+    let dealerCardStr2 = dealerCards[1].value + ' of ' + dealerCards[1].suit;
+
+
+    // let dealerCardStr = '';
+    // for (let i = 0; i < dealerCards.length; i++) {
+    //     dealerCardStr += cardString(dealerCards[i]);
+    // }
+    let playerCardStr = '';
+    for (let i = 0; i < playerCards.length; i++) {
+        playerCardStr += cardString(dealerCards[i]);
+    }
+
+    dealerDiv.innerText = "Dealer has: \n" + dealerCardStr1 + "\n" + dealerCardStr2;
+    playerDiv.innerText = "Player has: \n" + playerCardStr;
 }
 
 
@@ -132,6 +145,8 @@ function updateScores() {
 function cardString(card) {
     return card.value + ' of ' + card.suit;
 }
+
+
 
 function gameWinner() {
     updateScores();
