@@ -121,11 +121,17 @@ html {
   }
 
   #player-cards {
-      font-size: 16px;
+      font-size: 17px;
+      position: fixed;
+      top: 61%;
+      font-weight: 450;
   }
 
   #player-score {
       font-size: 36px;
+      position: fixed;
+      top: 70%;
+      font-weight: 450;
   }
 
   #dealer-cards {
@@ -143,6 +149,11 @@ html {
   }
 
   #red-card-d {
+      width: 150px;
+      height: 200px;
+  }
+
+  #red-card-p {
       width: 150px;
       height: 200px;
   }
