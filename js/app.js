@@ -38,6 +38,7 @@ playBtn.addEventListener('click', play);
 
 /*----------------------- Functions -----------------------*/
 function play() {
+    
     gameStarted = true;
 
     deck = generateDeck();
@@ -74,6 +75,7 @@ function play() {
 function handleHit() {
     // deck = generateDeck();
     // shuffleDeck(deck);
+    messageEl.innerText = '';
 
     playerCards.push(deck.shift());
 
@@ -88,8 +90,11 @@ function handleHit() {
     
     updateScores();
     playerScoreEl.innerText = playerScore;
+    console.log(playerScore);
 
-    // gameWinner();
+    if (playerScore > 21) {
+        messageEl.innerText = 'Bust!';
+    } 
 }
 
 function handleStand() {
