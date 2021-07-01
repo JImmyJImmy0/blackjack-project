@@ -45,19 +45,21 @@ function play() {
     let dealerCardStr1 = dealerCards[0].value + ' of ' + dealerCards[0].suit;
     let dealerCardStr2 = dealerCards[1].value + ' of ' + dealerCards[1].suit;
     
+    let playerCardStr1 = playerCards[0].value + ' of ' + playerCards[0].suit;
+    let playerCardStr2 = playerCards[1].value + ' of ' + playerCards[1].suit;
 
 
     // let dealerCardStr = '';
     // for (let i = 0; i < dealerCards.length; i++) {
     //     dealerCardStr += cardString(dealerCards[i]);
     // }
-    let playerCardStr = '';
-    for (let i = 0; i < playerCards.length; i++) {
-        playerCardStr += cardString(dealerCards[i]);
-    }
+    // let playerCardStr = '';
+    // for (let i = 0; i < playerCards.length; i++) {
+    //     playerCardStr += cardString(dealerCards[i]);
+    // }
 
     dealerDiv.innerText = "Dealer has: \n" + dealerCardStr1 + "\n" + dealerCardStr2;
-    playerDiv.innerText = "Player has: \n" + playerCardStr;
+    playerDiv.innerText = "Player has: \n" + playerCardStr1 + "\n" + playerCardStr2;
 }
 
 
