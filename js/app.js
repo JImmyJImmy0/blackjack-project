@@ -32,7 +32,7 @@ const playerScoreEl = document.querySelector('#player-score');
 
 /*-------------------- Event Listeners --------------------*/
 hitBtn.addEventListener('click', handleHit);
-// standBtn.addEventListener('click', log2);
+standBtn.addEventListener('click', handleStand);
 playBtn.addEventListener('click', play);
 
 
@@ -71,8 +71,6 @@ function handleHit() {
     // shuffleDeck(deck);
 
     playerCards.push(deck.shift());
-    console.log(playerCards);
-    // console.log(playerScore);
 
     let playerCardStr1 = playerCards[0].value + ' of ' + playerCards[0].suit;
     let playerCardStr2 = playerCards[1].value + ' of ' + playerCards[1].suit;
@@ -85,14 +83,28 @@ function handleHit() {
     
     updateScores();
     playerScoreEl.innerText = playerScore;
-    console.log(playerScore);
 
     // gameWinner();
 }
 
+function handleStand() {
+    // dealer must stay on 17 or higher;
+    if (dealerScore < 17) {
+        dealerCards.push(deck.shift());
 
+        let dealerCardStr1 = dealerCards[0].value + ' of ' + dealerCards[0].suit;
+        let dealerCardStr2 = dealerCards[1].value + ' of ' + dealerCards[1].suit;
+        let dealerCardStr3 = dealerCards[2].value + ' of ' + dealerCards[2].suit;
 
+        dealerCardsEl.innerText = "Dealer has: \n" + dealerCardStr1 + "\n" + dealerCardStr2 + "\n" + dealerCardStr3;
 
+        updateScores();
+        dealerScoreEl.innerText = dealerScore;
+    } else if (dealerScore >= 17) {
+        updateScores();
+        dealerScoreEl.innerText = dealerScore;
+    }
+}
 
 function generateDeck() {
     let deck = [];
@@ -107,7 +119,7 @@ function generateDeck() {
     }
     return deck;
 }
-// console.log(generateDeck())
+
 // https://devdojo.com/devdojo/create-a-deck-of-cards-in-javascript
 function shuffleDeck(o) {
 	// iterate over the entire input array "o"
@@ -124,7 +136,6 @@ function shuffleDeck(o) {
         }
         return o;
     };
-    
 
 function getCardValue(card) {
     switch (card.value) {
@@ -151,8 +162,6 @@ function getCardValue(card) {
     }
 }
 
-
-
 function getScore(cardArr) {
     let score = 0;
     let hasAce = false;
@@ -170,14 +179,10 @@ function getScore(cardArr) {
     }
 }
 
-
-
-
 function updateScores() {
     dealerScore = getScore(dealerCards);
     playerScore = getScore(playerCards);
 }
-
 
 function gameWinner() {
     updateScores();
