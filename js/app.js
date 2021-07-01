@@ -58,7 +58,8 @@ function play() {
     dealerScore = getScore(dealerCards);
     playerScore = getScore(playerCards);
 
-
+    dealerScoreEl.innerText = dealerScore;
+    playerScoreEl.innerText = playerScore;
 
 }
 
