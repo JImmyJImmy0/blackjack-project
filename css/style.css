@@ -39,13 +39,13 @@ html {
       width: 150px;
       height: 200px;
       text-align: center;
-      font-size: 20px;
+      font-size: 18px;
   }
 
   #message {
       position: fixed;
-      top: 16%;
-      font-size: 22px;
+      top: 15%;
+      font-size: 44px;
   }
 
   #player-total {
@@ -55,7 +55,7 @@ html {
       width: 150px;
       height: 200px;
       text-align: center;
-      font-size: 20px;
+      /* font-size: 18px; */
   }
 
   .btn-group {
@@ -105,4 +105,20 @@ html {
       position: fixed;
       top: 26%;
       font-size: 24px;
+  }
+
+  #player-cards {
+      font-size: 16px;
+  }
+
+  #player-score {
+      font-size: 36px;
+  }
+
+  #dealer-cards {
+      font-size: 16px;
+  }
+
+  #dealer-score {
+      font-size: 36px;
   }
