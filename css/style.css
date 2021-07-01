@@ -35,11 +35,10 @@ html {
   #dealer-total {
       background-color: lightblue;
       position: fixed;
-      top: 30%;
+      top: 32%;
       width: 150px;
       height: 200px;
       text-align: center;
-      font-size: 18px;
   }
 
   #message {
@@ -55,13 +54,7 @@ html {
       width: 150px;
       height: 200px;
       text-align: center;
-      /* font-size: 18px; */
   }
-
-  /* .btn-group {
-      position: fixed;
-      top: 85%
-  } */
 
   #hit-btn {
       position: fixed;
@@ -123,7 +116,7 @@ html {
 
   #dealer-title {
       position: fixed;
-      top: 26%;
+      top: 28%;
       font-size: 24px;
   }
 
@@ -137,8 +130,19 @@ html {
 
   #dealer-cards {
       font-size: 16px;
+      position: fixed;
+      top: 33%;
+      font-weight: 450;
   }
 
   #dealer-score {
       font-size: 36px;
+      position: fixed;
+      top: 42%;
+      font-weight: 400;
+  }
+
+  #red-card-d {
+      width: 150px;
+      height: 200px;
   }
