@@ -51,7 +51,9 @@ function play() {
     dealerDiv.innerText = "Dealer has: \n" + dealerCardStr1 + "\n" + dealerCardStr2;
     playerDiv.innerText = "Player has: \n" + playerCardStr1 + "\n" + playerCardStr2;
 
-    
+    dealerScore = getScore(dealerCards);
+    playerScore = getScore(playerCards);
+
 
 
 }
