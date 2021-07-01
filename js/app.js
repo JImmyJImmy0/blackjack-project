@@ -44,6 +44,7 @@ function play() {
 
     let dealerCardStr1 = dealerCards[0].value + ' of ' + dealerCards[0].suit;
     let dealerCardStr2 = dealerCards[1].value + ' of ' + dealerCards[1].suit;
+    
 
 
     // let dealerCardStr = '';
@@ -142,9 +143,7 @@ function updateScores() {
     playerScore = getScore(playerCards);
 }
 
-function cardString(card) {
-    return card.value + ' of ' + card.suit;
-}
+
 
 
 
