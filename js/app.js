@@ -11,15 +11,12 @@ let playerScore = 0;
 let deck = [];
 let playerCards = [];
 let dealerCards = [];
-let playerWin = false;
-let gameStarted = false;
-let gameOver = false;
-let startingCash = 100;
 
 /*--------------- Cached Element References ---------------*/
 const hitBtn = document.querySelector('#hit-btn');
 const standBtn = document.querySelector('#stand-btn');
 const playBtn = document.querySelector('#play-button');
+const lightDarkBtn = document.querySelector('#light-dark-btn');
 const cashTotal = document.querySelector('#cash-total');
 const messageEl = document.querySelector('#message');
 const betInput = document.querySelector('#bet');
