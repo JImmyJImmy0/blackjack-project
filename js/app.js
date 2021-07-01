@@ -1,5 +1,11 @@
 /*----------------------- Constants -----------------------*/
-
+const colorScheme = {
+    dark: '',
+    change: function() {
+        colorScheme.dark = colorScheme.dark ? '' : 'dark'
+        document.querySelector('body').setAttribute('class', colorScheme.dark)
+    }
+}
 
 
 /*----------------------- Variables -----------------------*/
