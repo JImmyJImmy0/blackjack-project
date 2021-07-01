@@ -37,6 +37,7 @@ const playerScoreEl = document.querySelector('#player-score');
 hitBtn.addEventListener('click', handleHit);
 standBtn.addEventListener('click', handleStand);
 playBtn.addEventListener('click', play);
+lightDarkBtn.addEventListener('click', colorScheme.change);
 
 
 /*----------------------- Functions -----------------------*/
