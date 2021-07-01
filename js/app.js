@@ -40,6 +40,16 @@ playBtn.addEventListener('click', play);
 
 
 /*----------------------- Functions -----------------------*/
+checkUserColorSchemePreference();
+
+function checkUserColorSchemePreference() {
+    if (
+        window.matchMedia('(prefers-color-scheme:dark)').matches && !colorScheme.dark
+    ) {
+        colorScheme.change()
+    }
+}
+
 function play() {
     
     gameStarted = true;
