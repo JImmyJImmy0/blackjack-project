@@ -54,7 +54,7 @@ function play() {
     dealerScore = getScore(dealerCards);
     playerScore = getScore(playerCards);
 
-
+    
 
 }
 
