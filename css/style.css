@@ -22,6 +22,7 @@ html {
       flex-direction: column;
       justify-content: center;
       align-items: center;
+      background-color: rgb(82, 145, 82);
   }
 
   #main-title {
