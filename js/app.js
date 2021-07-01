@@ -50,6 +50,10 @@ function play() {
 
     dealerDiv.innerText = "Dealer has: \n" + dealerCardStr1 + "\n" + dealerCardStr2;
     playerDiv.innerText = "Player has: \n" + playerCardStr1 + "\n" + playerCardStr2;
+
+    
+
+
 }
 
 
@@ -69,7 +73,7 @@ function generateDeck() {
     }
     return deck;
 }
-
+// console.log(generateDeck())
 // https://devdojo.com/devdojo/create-a-deck-of-cards-in-javascript
 function shuffleDeck(o) {
 	// iterate over the entire input array "o"
@@ -89,7 +93,7 @@ function shuffleDeck(o) {
 
 function getCardValue(card) {
     switch (card.value) {
-        case 'A':
+        case 'Ace':
             return 1;
         case '2':
             return 2;
@@ -120,23 +124,24 @@ function getScore(cardArr) {
     for (let i = 0; i < cardArr.length; i++) {
         let card = cardArr[i];
         score += getCardValue(card);
-        if (card.value === 'A') {
-            hasAce === true;
+        if (card.value === 'Ace') {
+            hasAce = true;
         }
     }
     if (hasAce && score + 10 <= 21) {
         return score + 10;
+    } else {
+        return score;
     }
-    return score;
 }
+
+
+
 
 function updateScores() {
     dealerScore = getScore(dealerCards);
     playerScore = getScore(playerCards);
 }
-
-
-
 
 
 function gameWinner() {
