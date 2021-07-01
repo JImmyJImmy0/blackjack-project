@@ -106,11 +106,7 @@ function getCardValue(card) {
     }
 }
 
-// function getNextCard() {
-//     let deck = generateDeck();
-//     let nextCard = deck.shift();
-//     return JSON.stringify(nextCard);
-// }
+
 
 function getScore(cardArr) {
     let score = 0;
