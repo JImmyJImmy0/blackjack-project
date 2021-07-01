@@ -52,7 +52,7 @@ function play() {
     let playerCardStr1 = playerCards[0].value + ' of ' + playerCards[0].suit;
     let playerCardStr2 = playerCards[1].value + ' of ' + playerCards[1].suit;
 
-    dealerCardsEl.innerText = dealerCardStr1 + "\n" + dealerCardStr2;
+    dealerCardsEl.innerText = "Dealer has: \n" + dealerCardStr1 + "\n" + dealerCardStr2;
     playerCardsEl.innerText = playerCardStr1 + "\n" + playerCardStr2;
 
     dealerScore = getScore(dealerCards);
