@@ -114,6 +114,16 @@ function handleStand() {
         updateScores();
         dealerScoreEl.innerText = dealerScore;
     }
+
+    if ( (playerScore >= 17 && playerScore <= 21) && (dealerScore >= 17 && dealerScore <= 21) && (playerScore === dealerScore) ) {
+        messageEl.innerText = 'Push!';
+    } else if ( (playerScore <= 21) && (dealerScore >= 17) && (playerScore > dealerScore) ) {
+        messageEl.innerText = 'You win!';
+    } else if (dealerScore <= 21 && dealerScore > playerScore) {
+        messageEl.innerText = 'Dealer Wins!';
+    } else if (dealerScore > 21) {
+        messageEl.innerText = 'You Win!';
+    }
 }
 
 function generateDeck() {
@@ -132,7 +142,7 @@ function generateDeck() {
 
 // https://devdojo.com/devdojo/create-a-deck-of-cards-in-javascript
 function shuffleDeck(o) {
-	// iterate over the entire input array "o"
+	// iterate over the entire deck array "o"
     for(let i = o.length; i; i--) {
         // get the "current" item and save it in variable "x"
         let x = o[i];
