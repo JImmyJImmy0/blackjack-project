@@ -31,7 +31,7 @@ const playerCardsEl = document.querySelector('#player-cards');
 const playerScoreEl = document.querySelector('#player-score');
 
 /*-------------------- Event Listeners --------------------*/
-// hitBtn.addEventListener('click', log);
+hitBtn.addEventListener('click', handleHit);
 // standBtn.addEventListener('click', log2);
 playBtn.addEventListener('click', play);
 
@@ -61,6 +61,33 @@ function play() {
     dealerScoreEl.innerText = dealerScore;
     playerScoreEl.innerText = playerScore;
 
+    messageEl.innerText = '';
+    // gameWinner();
+
+}
+
+function handleHit() {
+    // deck = generateDeck();
+    // shuffleDeck(deck);
+
+    playerCards.push(deck.shift());
+    console.log(playerCards);
+    // console.log(playerScore);
+
+    let playerCardStr1 = playerCards[0].value + ' of ' + playerCards[0].suit;
+    let playerCardStr2 = playerCards[1].value + ' of ' + playerCards[1].suit;
+    let playerCardStr3 = playerCards[2].value + ' of ' + playerCards[2].suit;
+
+    //Kept get error when trying to display the 4th card;
+    // let playerCardStr4 = playerCards[3].value + ' of ' + playerCards[3].suit;
+
+    playerCardsEl.innerText = "Player has: \n" + playerCardStr1 + "\n" + playerCardStr2 + "\n" + playerCardStr3;
+    
+    updateScores();
+    playerScoreEl.innerText = playerScore;
+    console.log(playerScore);
+
+    // gameWinner();
 }
 
 
@@ -97,6 +124,7 @@ function shuffleDeck(o) {
         }
         return o;
     };
+    
 
 function getCardValue(card) {
     switch (card.value) {
