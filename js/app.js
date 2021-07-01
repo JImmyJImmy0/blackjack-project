@@ -62,7 +62,12 @@ function play() {
     playerScoreEl.innerText = playerScore;
 
     messageEl.innerText = '';
-    // gameWinner();
+    
+    if (playerScore === 21 && dealerScore === 21) {
+        messageEl.innerText = 'Push!';
+    } else if (playerScore === 21) {
+        messageEl.innerText = 'Blackjack!';
+    }
 
 }
 
