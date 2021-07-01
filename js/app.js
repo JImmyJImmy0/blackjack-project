@@ -36,12 +36,13 @@ playBtn.addEventListener('click', play);
 function play() {
     gameStarted = true;
 
-    deck = generateDeck;
+    deck = generateDeck();
     shuffleDeck(deck);
-    dealerCards = [getNextCard()];
-    playerCards = [getNextCard(), getNextCard()];
 
-    dealerDiv.innerHTML = `dealer has ${dealerCards}`;
+    dealerCards = [JSON.stringify(deck.shift()), JSON.stringify(deck.shift())];
+    playerCards = [JSON.stringify(deck.shift()), JSON.stringify(deck.shift())];
+
+    dealerDiv.innerHTML = 'dealer has ' + dealerCards;
     playerDiv.innerText = `player has ${playerCards}`;
 }
 
@@ -105,9 +106,11 @@ function getCardValue(card) {
     }
 }
 
-function getNextCard() {
-    return deck.shift;
-}
+// function getNextCard() {
+//     let deck = generateDeck();
+//     let nextCard = deck.shift();
+//     return JSON.stringify(nextCard);
+// }
 
 function getScore(cardArr) {
     let score = 0;
