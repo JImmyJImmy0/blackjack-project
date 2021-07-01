@@ -42,7 +42,7 @@ function play() {
     dealerCards = [JSON.stringify(deck.shift()), JSON.stringify(deck.shift())];
     playerCards = [JSON.stringify(deck.shift()), JSON.stringify(deck.shift())];
 
-    dealerDiv.innerHTML = 'dealer has ' + dealerCards;
+    dealerDiv.innerHTML = `dealer had ${dealerCards}`;
     playerDiv.innerText = `player has ${playerCards}`;
 }
 
