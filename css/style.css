@@ -44,7 +44,7 @@ html {
 
   #message {
       position: fixed;
-      top: 20%;
+      top: 18%;
   }
 
   #player-total {
@@ -64,7 +64,7 @@ html {
 
   #play-button {
       position: fixed;
-      top: 20%;
+      top: 22%;
   }
 
   #cash-header {
