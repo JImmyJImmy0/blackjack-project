@@ -23,7 +23,10 @@ const playBtn = document.querySelector('#play-button');
 const cashTotal = document.querySelector('#cash-total');
 const messageEl = document.querySelector('#message');
 const betInput = document.querySelector('#bet');
-const dealerDiv = document.querySelector('#dealer-total');
+
+const dealerCardsEl = document.querySelector('#dealer-cards');
+const dealerScoreEl = document.querySelector('#dealer-score');
+
 const playerDiv = document.querySelector('#player-total');
 
 /*-------------------- Event Listeners --------------------*/
@@ -48,13 +51,13 @@ function play() {
     let playerCardStr1 = playerCards[0].value + ' of ' + playerCards[0].suit;
     let playerCardStr2 = playerCards[1].value + ' of ' + playerCards[1].suit;
 
-    dealerDiv.innerText = "Dealer has: \n" + dealerCardStr1 + "\n" + dealerCardStr2;
+    dealerCardsEl.innerText = "Dealer has: \n" + dealerCardStr1 + "\n" + dealerCardStr2;
     playerDiv.innerText = "Player has: \n" + playerCardStr1 + "\n" + playerCardStr2;
 
     dealerScore = getScore(dealerCards);
     playerScore = getScore(playerCards);
 
-    
+
 
 }
 
