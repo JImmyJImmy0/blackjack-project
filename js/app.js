@@ -27,7 +27,8 @@ const betInput = document.querySelector('#bet');
 const dealerCardsEl = document.querySelector('#dealer-cards');
 const dealerScoreEl = document.querySelector('#dealer-score');
 
-const playerDiv = document.querySelector('#player-total');
+const playerCardsEl = document.querySelector('#player-cards');
+const playerScoreEl = document.querySelector('#player-score');
 
 /*-------------------- Event Listeners --------------------*/
 // hitBtn.addEventListener('click', log);
@@ -52,7 +53,7 @@ function play() {
     let playerCardStr2 = playerCards[1].value + ' of ' + playerCards[1].suit;
 
     dealerCardsEl.innerText = "Dealer has: \n" + dealerCardStr1 + "\n" + dealerCardStr2;
-    playerDiv.innerText = "Player has: \n" + playerCardStr1 + "\n" + playerCardStr2;
+    playerCardsEl.innerText = "Player has: \n" + playerCardStr1 + "\n" + playerCardStr2;
 
     dealerScore = getScore(dealerCards);
     playerScore = getScore(playerCards);
