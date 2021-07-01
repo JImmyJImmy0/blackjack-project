@@ -42,7 +42,7 @@ function play() {
     dealerCards = [JSON.stringify(deck.shift()), JSON.stringify(deck.shift())];
     playerCards = [JSON.stringify(deck.shift()), JSON.stringify(deck.shift())];
 
-    dealerDiv.innerHTML = `dealer had ${dealerCards}`;
+    dealerDiv.innerHTML = `dealer has ${dealerCards}`;
     playerDiv.innerText = `player has ${playerCards}`;
 }
 
@@ -127,6 +127,10 @@ function getScore(cardArr) {
 function updateScores() {
     dealerScore = getScore(dealerCards);
     playerScore = getScore(playerCards);
+}
+
+function cardString(card) {
+    return card.value + ' of ' + card.suit;
 }
 
 function gameWinner() {
