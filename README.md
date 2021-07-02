@@ -28,9 +28,9 @@ Technologies used: HTML, CSS, and Javascript.  -->
 I decided to do Blackjack for my project because I really enjoy playing casino games. Blackjack is among my favorite casino games becuase there is no better feeling than being dealt a 21. 
 
 ## Rules
-    * Both the player and the dealer are dealt 2 cards.
-    * The player has 2 options, either hit or stand.
-    * If the player chooses to hit, they are dealt another card.
-    * However, if the player's score goes over 21, they bust.
-    * If the player chooses to stand, the dealer is dealt cards until they either have a higher score than the player, or go over 21.
-    * Once either the player or the dealer wins, the hand is over.
+* Both the player and the dealer are dealt 2 cards.
+* The player has 2 options, either hit or stand.
+* If the player chooses to hit, they are dealt another card.
+* However, if the player's score goes over 21, they bust.
+* If the player chooses to stand, the dealer is dealt cards until they either have a higher score than the player, or go over 21.
+* Once either the player or the dealer wins, the hand is over.
