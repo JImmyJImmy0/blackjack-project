@@ -45,10 +45,16 @@ My version of Blackjack is deployed [here](https://jeblackjack.netlify.app/)
 ![Dark mode screenshot](images/darkmode.png)
 
 ## Technologies Used
-The technologies is used to create this project are:
+The technologies I used to create this project are:
 
 * HTML
 * CSS
 * JavaScript
 * Bootstrap
 * Google Fonts
+
+## Ice Box Items
+There a a couple features I would like to add down the road. 
+
+1. I would like to implement a betting system where the player can bet on each hand.
+2. I would also like to animate the cards being delt from a deck.
