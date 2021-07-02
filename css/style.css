@@ -144,6 +144,7 @@ html {
       position: fixed;
       top: 61%;
       font-weight: 450;
+      color: var(--body-text-color);
   }
 
   #player-score {
@@ -151,6 +152,7 @@ html {
       position: fixed;
       top: 70%;
       font-weight: 450;
+      color: var(--body-text-color);
   }
 
   #dealer-cards {
@@ -158,6 +160,7 @@ html {
       position: fixed;
       top: 33%;
       font-weight: 450;
+      color: var(--body-text-color);
   }
 
   #dealer-score {
@@ -165,6 +168,7 @@ html {
       position: fixed;
       top: 42%;
       font-weight: 400;
+      color: var(--body-text-color);
   }
 
   #red-card-d {
