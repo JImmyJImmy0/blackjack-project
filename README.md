@@ -28,6 +28,8 @@ Technologies used: HTML, CSS, and Javascript.  -->
 I decided to do Blackjack for my project because I really enjoy playing casino games. Blackjack is among my favorite casino games becuase there is no better feeling than being dealt a 21. 
 
 ## Rules
+Blackjack is a fairly simple game once you understand the rules.
+
 * Both the player and the dealer are dealt 2 cards.
 * The player has 2 options, either hit or stand.
 * If the player chooses to hit, they are dealt another card.
