@@ -36,3 +36,6 @@ Blackjack is a fairly simple game once you understand the rules.
 * However, if the player's score goes over 21, they bust.
 * If the player chooses to stand, the dealer is dealt cards until they either have a higher score than the player, or go over 21.
 * Once either the player or the dealer wins, the hand is over.
+
+## Getting Started
+My version of Blackjack is deployed [here](https://jeblackjack.netlify.app/)
