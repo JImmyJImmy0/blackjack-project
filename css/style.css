@@ -18,12 +18,13 @@ html {
   }
 
   body {
-      --body-bg: #529152;
+      --body-bg: #277714;
       --btn-text-color: #FFFFFF;
       --body-text-color: #000000;
-      --light-dark-btn-bg: #404040;
+      --card-text-color: #000000;
+      --light-dark-btn-bg: #183446;
       --light-dark-btn-color: #FFFFFF;
-      --play-btn-bg: #8A8A8A;
+      --play-btn-bg: #E57A44;
       --hit-btn-bg: #3173D7;
       --stand-btn-bg: #FF1E00;
       --light-dark-btn-content: "Dark Mode";
@@ -34,6 +35,19 @@ html {
       justify-content: center;
       align-items: center;
       background-color: var(--body-bg);
+  }
+
+  body.dark {
+      --body-bg: #183446;
+      --btn-text-color: #000000;
+      --body-text-color: #77DFE4;
+      --card-text-color: #000000;
+      --light-dark-btn-bg: #277714;
+      --light-dark-btn-color: #000000;
+      --play-btn-bg: #4F86C6;
+      --hit-btn-bg: #BD7F21;
+      --stand-btn-bg: #706C61;
+      --light-dark-btn-content: "Light Mode";
   }
 
   #main-title {
@@ -148,7 +162,7 @@ html {
       position: fixed;
       top: 61%;
       font-weight: 450;
-      color: var(--body-text-color);
+      color: var(--card-text-color);
   }
 
   #player-score {
@@ -156,7 +170,7 @@ html {
       position: fixed;
       top: 70%;
       font-weight: 450;
-      color: var(--body-text-color);
+      color: var(--card-text-color);
   }
 
   #dealer-cards {
@@ -164,7 +178,7 @@ html {
       position: fixed;
       top: 33%;
       font-weight: 450;
-      color: var(--body-text-color);
+      color: var(--card-text-color);
   }
 
   #dealer-score {
@@ -172,7 +186,7 @@ html {
       position: fixed;
       top: 42%;
       font-weight: 400;
-      color: var(--body-text-color);
+      color: var(--card-text-color);
   }
 
   #red-card-d {
