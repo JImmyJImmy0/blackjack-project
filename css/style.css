@@ -18,19 +18,30 @@ html {
   }
 
   body {
+      --body-bg: #529152;
+      --btn-text-color: #FFFFFF;
+      --body-text-color: #000000;
+      --light-dark-btn-bg: #404040;
+      --light-dark-btn-color: #FFFFFF;
+      --play-btn-bg: #8A8A8A;
+      --light-dark-btn-content: "Dark Mode";
+
+    
       display: flex;
       flex-direction: column;
       justify-content: center;
       align-items: center;
-      background-color: rgb(82, 145, 82);
+      background-color: var(--body-bg);
   }
 
   #main-title {
       font-size: 48px;
+      color: var(--body-text-color);
   }
 
   #game-goal {
       font-size: 28px;
+      color: var(--body-text-color);
   }
 
   #dealer-total {
@@ -46,6 +57,7 @@ html {
       position: fixed;
       top: 13%;
       font-size: 44px;
+      color: var(--body-text-color);
   }
 
   #player-total {
@@ -64,6 +76,7 @@ html {
       width: 60px;
       height: 40px;
       border-radius: 30%;
+      color: var(--btn-text-color);
   }
 
   #stand-btn {
@@ -73,6 +86,7 @@ html {
       width: 60px;
       height: 40px;
       border-radius: 30%;
+      color: var(--btn-text-color);
   }
 
   #play-button {
@@ -80,6 +94,8 @@ html {
       top: 21%;
       width: 60px;
       height: 40px;
+      color: var(--btn-text-color);
+      background-color: var(--play-btn-bg);
   }
 
   #cash-header {
@@ -113,12 +129,14 @@ html {
       position: fixed;
       top: 56%;
       font-size: 24px;
+      color: var(--body-text-color);
   }
 
   #dealer-title {
       position: fixed;
       top: 28%;
       font-size: 24px;
+      color: var(--body-text-color);
   }
 
   #player-cards {
@@ -165,4 +183,10 @@ html {
       right: 10%;
       width: 60px;
       height: 40px;
+      background-color: var(--light-dark-btn-bg);
+  }
+
+  #light-dark-btn::after {
+      content: var(--light-dark-btn-content);
+      color: var(--light-dark-btn-color);
   }
