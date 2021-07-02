@@ -39,3 +39,7 @@ Blackjack is a fairly simple game once you understand the rules.
 
 ## Getting Started
 My version of Blackjack is deployed [here](https://jeblackjack.netlify.app/)
+
+## Screenshots
+![Light mode screenshot](images/lightmode.png)
+![Dark mode screenshot](images/darkmode.png)
