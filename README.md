@@ -43,3 +43,12 @@ My version of Blackjack is deployed [here](https://jeblackjack.netlify.app/)
 ## Screenshots
 ![Light mode screenshot](images/lightmode.png)
 ![Dark mode screenshot](images/darkmode.png)
+
+## Technologies Used
+The technologies is used to create this project are:
+
+* HTML
+* CSS
+* JavaScript
+* Bootstrap
+* Google Fonts
