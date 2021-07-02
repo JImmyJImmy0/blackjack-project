@@ -83,12 +83,9 @@ function play() {
     } else if (playerScore === 21) {
         messageEl.innerText = 'Blackjack!';
     }
-
 }
 
 function handleHit() {
-    // deck = generateDeck();
-    // shuffleDeck(deck);
     messageEl.innerText = '';
 
     playerCards.push(deck.shift());
@@ -96,9 +93,6 @@ function handleHit() {
     let playerCardStr1 = playerCards[0].value + ' of ' + playerCards[0].suit;
     let playerCardStr2 = playerCards[1].value + ' of ' + playerCards[1].suit;
     let playerCardStr3 = playerCards[2].value + ' of ' + playerCards[2].suit;
-
-    //Kept get error when trying to display the 4th card;
-    // let playerCardStr4 = playerCards[3].value + ' of ' + playerCards[3].suit;
 
     playerCardsEl.innerText = playerCardStr1 + "\n" + playerCardStr2 + "\n" + playerCardStr3;
     
@@ -112,7 +106,6 @@ function handleHit() {
 }
 
 function handleStand() {
-    // dealer must stay on 17 or higher;
     if (dealerScore < 17) {
         dealerCards.push(deck.shift());
 
@@ -216,24 +209,4 @@ function getScore(cardArr) {
 function updateScores() {
     dealerScore = getScore(dealerCards);
     playerScore = getScore(playerCards);
-}
-
-function gameWinner() {
-    updateScores();
-    if (playerScore <= 21 && playerScore === dealerScore) {
-        // update game message
-        messageEl.innerText = `Push! You and the Dealer both had ${playerScore}.`;
-    } else if ( (playerScore <= 21 && dealerScore <= 21) && playerScore > dealerScore) {
-        // update win game message
-        messageEl.innerText = `You win! Keep it goin!`;
-    } else if ( (playerScore <= 21 && dealerScore <= 21) && playerScore < dealerScore) {
-        // update lose game message
-        messageEl.innerText = `The dealer wins! Better luck next time!`;
-    } else if (playerScore > 21) {
-        // update bust game message
-        messageEl.innerText = `Bust! Better luck next time!`
-    } else if (dealerScore > 21) {
-        // update bust dealer game message
-        messageEl.innerText = `Dealer bust! You win!`
-    }
 }
