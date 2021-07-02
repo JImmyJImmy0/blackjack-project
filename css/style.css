@@ -89,9 +89,11 @@ html {
       position: fixed;
       top: 87%;
       left: 43%;
-      width: 60px;
-      height: 40px;
-      border-radius: 30%;
+      width: 100px;
+      height: 60px;
+      border: 3px solid white;
+      border-radius: 20%;
+      font-size: 20px;
       color: var(--btn-text-color);
       background-color: var(--hit-btn-bg);
   }
@@ -100,9 +102,11 @@ html {
       position: fixed;
       top: 87%;
       right: 43%;
-      width: 60px;
-      height: 40px;
-      border-radius: 30%;
+      width: 100px;
+      height: 60px;
+      border: 3px solid white;
+      border-radius: 20%;
+      font-size: 18px;
       color: var(--btn-text-color);
       background-color: var(--stand-btn-bg);
   }
@@ -110,8 +114,10 @@ html {
   #play-button {
       position: fixed;
       top: 21%;
-      width: 60px;
+      width: 70px;
       height: 40px;
+      font-size: 16px;
+      border: 3px solid white;
       color: var(--btn-text-color);
       background-color: var(--play-btn-bg);
   }
@@ -201,10 +207,12 @@ html {
 
   #light-dark-btn {
       position: fixed;
-      top: 87%;
+      top: 90%;
       right: 10%;
-      width: 60px;
-      height: 40px;
+      width: 100px;
+      height: 50px;
+      font-size: 15px;
+      border: 3px solid white;
       background-color: var(--light-dark-btn-bg);
   }
 
