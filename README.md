@@ -1,4 +1,4 @@
-Blackjack is table game found in casinos where the point of the game is to beat the dealer without going over 21. I chose to create Blackjack because I like playing it with friends.
+<!-- Blackjack is table game found in casinos where the point of the game is to beat the dealer without going over 21. I chose to create Blackjack because I like playing it with friends.
 
 
 https://jeblackjack.netlify.app
@@ -20,4 +20,9 @@ screenshot
 
 
 
-Technologies used: HTML, CSS, and Javascript. 
+Technologies used: HTML, CSS, and Javascript.  -->
+
+# Blackjack
+
+## Why Blackjack?
+text
