@@ -24,6 +24,8 @@ html {
       --light-dark-btn-bg: #404040;
       --light-dark-btn-color: #FFFFFF;
       --play-btn-bg: #8A8A8A;
+      --hit-btn-bg: #3173D7;
+      --stand-btn-bg: #FF1E00;
       --light-dark-btn-content: "Dark Mode";
 
     
@@ -77,6 +79,7 @@ html {
       height: 40px;
       border-radius: 30%;
       color: var(--btn-text-color);
+      background-color: var(--hit-btn-bg);
   }
 
   #stand-btn {
@@ -87,6 +90,7 @@ html {
       height: 40px;
       border-radius: 30%;
       color: var(--btn-text-color);
+      background-color: var(--stand-btn-bg);
   }
 
   #play-button {
