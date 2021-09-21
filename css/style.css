@@ -62,37 +62,37 @@ html {
   }
 
   #dealer-total {
-      /* background-color: lightblue; */
       background: url(/images/redCard.png);
       width: 150px;
-      height: 211px;
+      height: 212px;
       border-radius: 5%;
       text-align: center;
   }
 
   #message {
-      /* position: fixed;
-      top: 13%; */
-      font-size: 44px;
+      font-size: 36px;
       color: var(--body-text-color);
       font-family: var(--serif);
   }
 
   #player-total {
-      background-color: lightblue;
       background: url(/images/redCard.png);
       width: 150px;
-      height: 211px;
+      height: 212px;
       border-radius: 5%;
       text-align: center;
   }
 
+  .btn-group {
+      display: flex;
+      flex-direction: row;
+      margin-top: 10px;
+  }
+
   #hit-btn {
-      /* position: fixed;
-      top: 87%;
-      left: 43%; */
       width: 100px;
-      height: 60px;
+      height: 40px;
+      margin-right: 45px;
       border: 3px solid white;
       border-radius: 20%;
       font-size: 20px;
@@ -102,11 +102,9 @@ html {
   }
 
   #stand-btn {
-      /* position: fixed;
-      top: 87%;
-      right: 43%; */
       width: 100px;
-      height: 60px;
+      height: 40px;
+      margin-left: 45px;
       border: 3px solid white;
       border-radius: 20%;
       font-size: 20px;
@@ -116,8 +114,6 @@ html {
   }
 
   #play-button {
-      /* position: fixed;
-      top: 21%; */
       margin-top: 10px;
       width: 70px;
       height: 40px;
@@ -129,16 +125,12 @@ html {
   }
 
   #player-title {
-      /* position: fixed;
-      top: 56%; */
       font-size: 24px;
       color: var(--body-text-color);
       font-family: var(--serif);
   }
 
   #dealer-title {
-      /* position: fixed;
-      top: 27%; */
       font-size: 24px;
       color: var(--body-text-color);
       font-family: var(--serif);
@@ -146,8 +138,7 @@ html {
 
   #player-cards {
       font-size: 16px;
-      /* position: fixed;
-      top: 61%; */
+      margin-top: 10px;
       font-weight: 600;
       color: var(--card-text-color);
       font-family: var(--serif);
@@ -155,8 +146,6 @@ html {
 
   #player-score {
       font-size: 44px;
-      /* position: fixed;
-      top: 70%; */
       font-weight: 520;
       color: var(--card-text-color);
       font-family: var(--serif);
@@ -164,7 +153,7 @@ html {
 
   #dealer-cards {
       font-size: 16px;
-      
+      margin-top: 10px;
       font-weight: 600;
       color: var(--card-text-color);
       font-family: var(--serif);
@@ -172,27 +161,20 @@ html {
 
   #dealer-score {
       font-size: 44px;
-      /* position: fixed;
-      top: 42%; */
       font-weight: 520;
       color: var(--card-text-color);
       font-family: var(--serif);
   }
 
-  /* #red-card-d {
-      width: 150px;
-      height: 200px;
-  } */
-
-  #red-card-p {
-      width: 150px;
-      height: 200px;
+  #ld-btn-container {
+      margin-bottom: 10px;
+      margin-right: 30px;
+      width: 100vw;
+      display: flex;
+      justify-content: flex-end;
   }
 
   #light-dark-btn {
-      /* position: fixed;
-      top: 90%;
-      right: 10%; */
       width: 100px;
       height: 50px;
       font-size: 16px;
